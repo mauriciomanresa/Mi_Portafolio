@@ -1,0 +1,205 @@
+@import url("styles/reset.css");
+@import url("styles/header.css");
+@import url("styles/titulo.css");
+@import url("styles/aboutme.css");
+@import url("styles/skills.css");
+@import url("styles/hobbies.css");
+@import url("styles/formaacademic.css");
+@import url("styles/proyectos.css");
+@import url("styles/formcontacto.css");
+@import url("styles/footer.css");
+
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    background-color:aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Tablet*/
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Menú */
+    .header{
+        margin: 0 10px;
+        padding: 10px 20px;
+    }
+    
+    .menu_header {
+        margin-left: 0; 
+        height: 110px;
+    }
+    
+    .logo{
+        height: 110px;
+        width: 120px;
+        left: 20px;
+    }
+    
+    .menu_lista_item{
+        padding: 10px 10px;
+        font-size: 16px;
+    }
+
+    /* Titulo */
+    .titulo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Sobre mi */
+    .about_cabeza{
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    /* Skills */
+    .skills_box {
+        width: 25%;
+        text-align: center;
+    }
+
+    /* Hobbies */
+    .hobbies_box {
+        flex-basis: 48%;
+        margin-bottom: 20px;
+    }
+
+    /* Académica */
+    .academic_courses_box {
+        flex-basis: 48%;
+    }
+
+    text-align: center;
+
+
+
+    /* Proyectos */
+    .proyec_container {
+        flex-direction: column; /* Cambiar la dirección de la columna */
+        align-items: center; /* Centrar elementos */
+        margin-bottom: 40px; /* Ajustar margen inferior */
+    }
+
+    /*Contacto*/
+    .formcontacto_form {
+        width: 80%; /* Reducir el ancho del formulario */
+    }
+
+    /*Footer*/
+    .footer_marca {
+        margin-top: 20px; /* Ajustar margen superior */
+    }
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px){
+    /* Menú */
+    .menu_lista {
+        display: none; 
+    }
+    
+    .logo:hover{
+        cursor: pointer;
+        background-color: #3cf733;
+        opacity: 1%;
+        transition: 1.5s;
+    }
+    
+    .menu_list_out {
+        display: block; 
+        background: linear-gradient(to right, rgb(228, 246, 106) 0%, rgb(70, 70, 247) 50%, #71f49a 50%, rgb(63, 174, 7) 100%);
+        background-size: 200% 100%;
+        background-position: left center;
+        transition: 1s;
+        background-position: left center;
+        background-size: 200% 100%;
+    }
+
+    .contact_boton {
+        width: 140px;
+        font-size: 25px;
+        padding: 10px 20px;
+    }
+    
+    .menu_list_out:hover {
+        background-position: right center;
+        box-shadow: 3px 3px 4px #333;    
+    }
+
+    /* Título */
+    .titulo {
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .titulo_container{
+        text-align: justify;
+    }
+
+    .titulo_imagen {
+        height: auto;
+        width: 80%; 
+    }
+
+    /* Sobre mí */
+    .about_cabeza {
+        flex-direction: column; 
+        align-items: center;
+    }
+    
+    .about_title{
+        text-indent: 100px;
+    }
+    
+    .about_text {
+        text-indent: 100px;
+    }
+
+    /* Skills */
+    .skills_line {
+        flex-wrap: wrap; /* Permite que los elementos se ajusten automáticamente al ancho del contenedor */
+    }
+    
+    .skills_box {
+        justify-content: center;
+    }
+    
+    .skills_ul{
+        justify-content: center;
+    }
+
+    /* Hobbies */
+    .hobbies_box {
+        flex-basis: 48%; 
+    }
+
+    /* Académica */
+    .academic_courses {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .academic_courses_box {
+        flex-basis: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* Proyectos/Experiencia */
+    .proyec_container p {
+        font-size: 20px;
+    }
+
+}
+
+

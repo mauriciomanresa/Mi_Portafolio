@@ -1,0 +1,14 @@
+article.proyec_container{
+    margin: 25px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.proyec_container p{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+

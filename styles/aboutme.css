@@ -1,0 +1,36 @@
+.about_cabeza {
+    margin: 50px 60px 50px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 50px;
+}
+
+.about_title{
+    font-size: 30px;
+}
+
+.about_question{
+    line-height: 1.5;
+}
+
+.foto_escritorio{
+    border-radius: 15px;
+    max-height: 360px;
+    width: auto;
+}
+
+.foto_escritorio:hover{
+    filter: drop-shadow(20px  20px 20px #333 )  grayscale(0%) ;
+    transition: 2s;
+}
+
+.about_text {
+    margin: 10px 60px;
+    padding: 10px 20px;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
