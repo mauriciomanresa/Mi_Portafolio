@@ -28,7 +28,7 @@ main{
 }
 
 /*Tablet*/
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 481px) and (max-width: 768px) {
     /* Menú */
     .header{
         margin: 0 10px;
@@ -80,7 +80,6 @@ main{
         flex-basis: 48%;
     }
 
-    text-align: center;
 
 
 
@@ -103,7 +102,7 @@ main{
 }
 
 /* Estilos para dispositivos móviles */
-@media (max-width: 768px){
+@media (max-width: 480px){
     /* Menú */
     .menu_lista {
         display: none; 
