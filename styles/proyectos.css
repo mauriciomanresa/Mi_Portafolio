@@ -1,101 +1,111 @@
 #exp {
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .experience_section_title {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 2em;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em;
 }
 
 .proyec_container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .experience_box {
-    width: 25%;
-    background-color: #e0d9d9;
-    margin: 10px;
-    padding: 16px;
-    box-shadow: 4px 4px 10px rgb(0, 0, 0);
-    border-radius: 8px;
-    text-align: center;
-    transition: transform 0.2s;
-    display: flex;
-    flex-direction: column;
+  width: 30%;
+  background-color: #e0d9d9;
+  margin: 10px;
+  padding: 16px;
+  box-shadow: 4px 4px 10px rgb(0, 0, 0);
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
 }
 
 .experience_box:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .experience_img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 .experience_info {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .experience_title {
-    font-size: 1.5em;
-    margin: 10px 0;
+  font-size: 1.5em;
+  margin: 10px 0;
 }
 
 .experience_text {
-    color: #666;
-    margin-bottom: 10px;
+  color: #666;
+  margin-bottom: 10px;
 }
 
 .experience_description {
-    margin-top: 10px;
+  margin-top: 10px;
+  flex-grow: 1;
+}
+
+.button_container {
+  margin-top: auto;
 }
 
 .experience_button {
-    padding: 10px 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    cursor: pointer;
-    text-align: center;	
-    text-decoration: none;
-    outline: none;
-    color: #180b0b;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 6px 6px 10px #333;
-    background: linear-gradient(to right, rgb(228, 246, 106) 0%, rgb(70, 70, 247) 50%, #71f49a 50%, rgb(63, 174, 7) 100%);
-    background-size: 200% 100%;
-    background-position: left center;
-    transition: 1s;
-    background-position: left center;
-    background-size: 200% 100%;
+  padding: 10px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #180b0b;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 6px 6px 10px #333;
+  background: linear-gradient(
+    to right,
+    rgb(228, 246, 106) 0%,
+    rgb(70, 70, 247) 50%,
+    #71f49a 50%,
+    rgb(63, 174, 7) 100%
+  );
+  background-size: 200% 100%;
+  background-position: left center;
+  transition: 1s;
+  background-position: left center;
+  background-size: 200% 100%;
+  margin-top: auto;
+  margin-bottom: 10px;
 }
 
 .experience_button:hover {
-    background-position: right center;
-    box-shadow: 3px 3px 4px #333;
+  background-position: right center;
+  box-shadow: 3px 3px 4px #333;
 }
 
 @media screen and (max-width: 768px) {
-    .proyec_container {
-        justify-content: center;
-    }
-
-    .experience_box {
-        width: 45%;
-    }
+  .experience_box {
+    width: 45%;
+  }
 }
 
 @media screen and (max-width: 480px) {
-    .experience_box {
-        width: 100%;
-    }
+  .experience_box {
+    width: 100%;
+  }
 }

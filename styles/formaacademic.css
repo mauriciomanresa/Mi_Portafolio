@@ -1,38 +1,39 @@
-article.forma_container{
-    margin: 25px 40px;
+article.forma_container {
+  margin: 25px 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-.academic_title{
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 30px;
+.academic_title {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-.academic_courses{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.academic_courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
-
-.academic_courses_box{
-    flex-basis: 25%;
-    padding: 20px;
-    box-sizing: border-box;
-    text-align: center;
-    font-size: 22px;
-    gap: 20px;
+.academic_courses_box {
+  flex-basis: 25%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 22px;
+  gap: 20px;
 }
 
-.academic_courses_item_img{
-    width: 200px;
-    margin: 10px auto;
-
+.academic_courses_item_img {
+  width: 200px;
+  margin: 10px auto;
 }
 
-.academic_courses_item_img img{
-    width: auto;
-    height: 70px;
+.academic_courses_item_img img {
+  width: auto;
+  height: 70px;
 }
-

@@ -1,45 +1,63 @@
-.redes_sociales{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 40px 20px 10px 20px;
+.redes_sociales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 40px 20px 10px 20px;
 }
 
-.img-1{
-    width: 50px;
-    height: 50px;
+.img-1 {
+  width: 50px;
+  height: 50px;
 }
 
-.container-redesSociales-footer a{
-    margin-right: 50px;
+.container-redesSociales-footer a {
+  margin-right: 20px;
 }
 
-.footer_marca{
-    margin-top: 30px;
-    font-style: italic;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 15px;
-    font-size: 14px;
+.footer_marca {
+  margin-top: 30px;
+  font-style: italic;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 14px;
 }
 
-.whatsapp_logo{
-    width: 70px;
-    height: 70px;
-    position: fixed;
-    bottom: 70px;
-    right: 0px;
-    z-index: 999;
-    animation: aparecerDesaparecer 2.5s infinite alternate;
-    opacity: 0;
+.whatsapp_logo {
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  bottom: 70px;
+  right: 0px;
+  z-index: 999;
+  animation: aparecerDesaparecer 2.5s infinite alternate;
+  opacity: 0;
 }
 
 @keyframes aparecerDesaparecer {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-.footer_marca p{
-    font-size: 16px;
+.footer_marca p {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 480px) {
+  .redes_sociales {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .redes_sociales a {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
 }
